@@ -5,6 +5,10 @@ public class Task {
     public String description;
     public boolean done;
 
+    public Task(){
+        
+    }
+
     public Task(int id, String description, boolean done){
         this.id = id;
         this.description = description;
