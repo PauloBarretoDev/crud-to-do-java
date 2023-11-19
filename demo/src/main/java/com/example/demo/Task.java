@@ -9,8 +9,7 @@ public class Task {
         
     }
 
-    public Task(int id, String description, boolean done){
-        this.id = id;
+    public Task(String description, boolean done){
         this.description = description;
         this.done = done;
     }
@@ -33,5 +32,10 @@ public class Task {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Id: " + id + ", Description" + description + ", done: " + done;
     }
 }
